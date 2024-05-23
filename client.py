@@ -109,7 +109,7 @@ class sd_user_client:
 
         infer_input_audio_path = ""
         # 第一步：得到音频
-        if temp_file_path.endswith((".mp4", ".avi")):
+        if temp_file_path.endswith((".mp4", ".avi",".mkv")):
             logger.info(f"视频文件提取音轨")
             try:
                 temp_audio_path = os.path.splitext(temp_file_path)[0] + ".wav"
